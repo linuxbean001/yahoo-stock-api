@@ -3,7 +3,7 @@ export default class AllService {
 
     getStockInfo(){
         console.log('adminService...xx..x');
-        return axios.get("https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/get-histories?region=AU&lang=en&symbol=NBEV&from=1231866000&to=1547524844&events=div&interval=1d", {
+        return axios.get("https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-financials?symbol=AMRN", {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
